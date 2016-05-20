@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D86207FB1CE9E043003DB5E1 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D86207FA1CE9E043003DB5E1 /* VideoViewController.m */; };
+		D86208001CE9E0BD003DB5E1 /* VideosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D86207FE1CE9E0BD003DB5E1 /* VideosTableViewCell.m */; };
+		D86208011CE9E0BD003DB5E1 /* VideosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86207FF1CE9E0BD003DB5E1 /* VideosTableViewCell.xib */; };
+		D89399181CE9CDAE00463D67 /* VideoRecording+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = D89399151CE9CDAE00463D67 /* VideoRecording+CoreDataProperties.m */; };
+		D89399191CE9CDAE00463D67 /* VideoRecording.m in Sources */ = {isa = PBXBuildFile; fileRef = D89399171CE9CDAE00463D67 /* VideoRecording.m */; };
+		D895E88D1CEB308B00FB4DB4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D895E88C1CEB308B00FB4DB4 /* AVFoundation.framework */; };
+		D895E88F1CEB309200FB4DB4 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D895E88E1CEB309200FB4DB4 /* AVKit.framework */; };
+		D8EDAB2A1CE5AC74003B930A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EDAB291CE5AC74003B930A /* main.m */; };
+		D8EDAB2D1CE5AC74003B930A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EDAB2C1CE5AC74003B930A /* AppDelegate.m */; };
+		D8EDAB331CE5AC74003B930A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EDAB311CE5AC74003B930A /* Main.storyboard */; };
+		D8EDAB361CE5AC74003B930A /* SPVideoRecoder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8EDAB341CE5AC74003B930A /* SPVideoRecoder.xcdatamodeld */; };
+		D8EDAB381CE5AC74003B930A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8EDAB371CE5AC74003B930A /* Assets.xcassets */; };
+		D8EDAB3B1CE5AC74003B930A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8EDAB391CE5AC74003B930A /* LaunchScreen.storyboard */; };
+		D8EDAB461CE5AC74003B930A /* SPVideoRecoderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EDAB451CE5AC74003B930A /* SPVideoRecoderTests.m */; };
+		D8EDAB511CE5AC74003B930A /* SPVideoRecoderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EDAB501CE5AC74003B930A /* SPVideoRecoderUITests.m */; };
+		D8EDAB611CE5ACC0003B930A /* VideoRecoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EDAB601CE5ACC0003B930A /* VideoRecoderViewController.m */; };
+		D8EDAB681CE5AF8B003B930A /* video_call_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EDAB671CE5AF8B003B930A /* video_call_filled.png */; };
+		D8EDAB6A1CE5AFE7003B930A /* play_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = D8EDAB691CE5AFE7003B930A /* play_filled.png */; };
+		D8EDAB701CE5BAE6003B930A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EDAB6F1CE5BAE6003B930A /* CoreGraphics.framework */; };
+		D8EDAB721CE5BB99003B930A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EDAB711CE5BB99003B930A /* UIKit.framework */; };
+		D8EDAB741CE5BBA1003B930A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EDAB731CE5BBA1003B930A /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8EDAB421CE5AC74003B930A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8EDAB1D1CE5AC74003B930A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EDAB241CE5AC74003B930A;
+			remoteInfo = SPVideoRecoder;
+		};
+		D8EDAB4D1CE5AC74003B930A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8EDAB1D1CE5AC74003B930A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8EDAB241CE5AC74003B930A;
+			remoteInfo = SPVideoRecoder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D86207F91CE9E043003DB5E1 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		D86207FA1CE9E043003DB5E1 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		D86207FD1CE9E0BD003DB5E1 /* VideosTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideosTableViewCell.h; sourceTree = "<group>"; };
+		D86207FE1CE9E0BD003DB5E1 /* VideosTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideosTableViewCell.m; sourceTree = "<group>"; };
+		D86207FF1CE9E0BD003DB5E1 /* VideosTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideosTableViewCell.xib; sourceTree = "<group>"; };
+		D89399141CE9CDAE00463D67 /* VideoRecording+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VideoRecording+CoreDataProperties.h"; sourceTree = "<group>"; };
+		D89399151CE9CDAE00463D67 /* VideoRecording+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VideoRecording+CoreDataProperties.m"; sourceTree = "<group>"; };
+		D89399161CE9CDAE00463D67 /* VideoRecording.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoRecording.h; sourceTree = "<group>"; };
+		D89399171CE9CDAE00463D67 /* VideoRecording.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoRecording.m; sourceTree = "<group>"; };
+		D895E88C1CEB308B00FB4DB4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D895E88E1CEB309200FB4DB4 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		D8EDAB251CE5AC74003B930A /* SPVideoRecoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPVideoRecoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EDAB291CE5AC74003B930A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8EDAB2B1CE5AC74003B930A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D8EDAB2C1CE5AC74003B930A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D8EDAB321CE5AC74003B930A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8EDAB351CE5AC74003B930A /* SPVideoRecoder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SPVideoRecoder.xcdatamodel; sourceTree = "<group>"; };
+		D8EDAB371CE5AC74003B930A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8EDAB3A1CE5AC74003B930A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8EDAB3C1CE5AC74003B930A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8EDAB411CE5AC74003B930A /* SPVideoRecoderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPVideoRecoderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EDAB451CE5AC74003B930A /* SPVideoRecoderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPVideoRecoderTests.m; sourceTree = "<group>"; };
+		D8EDAB471CE5AC74003B930A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8EDAB4C1CE5AC74003B930A /* SPVideoRecoderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPVideoRecoderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8EDAB501CE5AC74003B930A /* SPVideoRecoderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPVideoRecoderUITests.m; sourceTree = "<group>"; };
+		D8EDAB521CE5AC74003B930A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8EDAB5F1CE5ACC0003B930A /* VideoRecoderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoRecoderViewController.h; sourceTree = "<group>"; };
+		D8EDAB601CE5ACC0003B930A /* VideoRecoderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoRecoderViewController.m; sourceTree = "<group>"; };
+		D8EDAB671CE5AF8B003B930A /* video_call_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_call_filled.png; sourceTree = "<group>"; };
+		D8EDAB691CE5AFE7003B930A /* play_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_filled.png; sourceTree = "<group>"; };
+		D8EDAB6F1CE5BAE6003B930A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D8EDAB711CE5BB99003B930A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8EDAB731CE5BBA1003B930A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8EDAB221CE5AC74003B930A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D895E88F1CEB309200FB4DB4 /* AVKit.framework in Frameworks */,
+				D895E88D1CEB308B00FB4DB4 /* AVFoundation.framework in Frameworks */,
+				D8EDAB741CE5BBA1003B930A /* Foundation.framework in Frameworks */,
+				D8EDAB721CE5BB99003B930A /* UIKit.framework in Frameworks */,
+				D8EDAB701CE5BAE6003B930A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EDAB3E1CE5AC74003B930A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EDAB491CE5AC74003B930A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D86207FC1CE9E079003DB5E1 /* VideosTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D86207FD1CE9E0BD003DB5E1 /* VideosTableViewCell.h */,
+				D86207FE1CE9E0BD003DB5E1 /* VideosTableViewCell.m */,
+				D86207FF1CE9E0BD003DB5E1 /* VideosTableViewCell.xib */,
+			);
+			name = VideosTableViewCell;
+			sourceTree = "<group>";
+		};
+		D893991A1CE9CDD200463D67 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D89399141CE9CDAE00463D67 /* VideoRecording+CoreDataProperties.h */,
+				D89399151CE9CDAE00463D67 /* VideoRecording+CoreDataProperties.m */,
+				D89399161CE9CDAE00463D67 /* VideoRecording.h */,
+				D89399171CE9CDAE00463D67 /* VideoRecording.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		D8D92D501CEDE044007A671E /* Framworks */ = {
+			isa = PBXGroup;
+			children = (
+				D895E88E1CEB309200FB4DB4 /* AVKit.framework */,
+				D895E88C1CEB308B00FB4DB4 /* AVFoundation.framework */,
+				D8EDAB731CE5BBA1003B930A /* Foundation.framework */,
+				D8EDAB711CE5BB99003B930A /* UIKit.framework */,
+				D8EDAB6F1CE5BAE6003B930A /* CoreGraphics.framework */,
+			);
+			name = Framworks;
+			sourceTree = "<group>";
+		};
+		D8EDAB1C1CE5AC74003B930A = {
+			isa = PBXGroup;
+			children = (
+				D8D92D501CEDE044007A671E /* Framworks */,
+				D86207FC1CE9E079003DB5E1 /* VideosTableViewCell */,
+				D893991A1CE9CDD200463D67 /* CoreData */,
+				D8EDAB271CE5AC74003B930A /* SPVideoRecoder */,
+				D8EDAB441CE5AC74003B930A /* SPVideoRecoderTests */,
+				D8EDAB4F1CE5AC74003B930A /* SPVideoRecoderUITests */,
+				D8EDAB261CE5AC74003B930A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8EDAB261CE5AC74003B930A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8EDAB251CE5AC74003B930A /* SPVideoRecoder.app */,
+				D8EDAB411CE5AC74003B930A /* SPVideoRecoderTests.xctest */,
+				D8EDAB4C1CE5AC74003B930A /* SPVideoRecoderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8EDAB271CE5AC74003B930A /* SPVideoRecoder */ = {
+			isa = PBXGroup;
+			children = (
+				D8EDAB641CE5AF02003B930A /* Images */,
+				D8EDAB5E1CE5AC8B003B930A /* ViewControllers */,
+				D8EDAB621CE5ACCD003B930A /* Delegate */,
+				D8EDAB631CE5ACDC003B930A /* UI */,
+				D8EDAB341CE5AC74003B930A /* SPVideoRecoder.xcdatamodeld */,
+				D8EDAB281CE5AC74003B930A /* Supporting Files */,
+			);
+			path = SPVideoRecoder;
+			sourceTree = "<group>";
+		};
+		D8EDAB281CE5AC74003B930A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8EDAB3C1CE5AC74003B930A /* Info.plist */,
+				D8EDAB291CE5AC74003B930A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8EDAB441CE5AC74003B930A /* SPVideoRecoderTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8EDAB451CE5AC74003B930A /* SPVideoRecoderTests.m */,
+				D8EDAB471CE5AC74003B930A /* Info.plist */,
+			);
+			path = SPVideoRecoderTests;
+			sourceTree = "<group>";
+		};
+		D8EDAB4F1CE5AC74003B930A /* SPVideoRecoderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8EDAB501CE5AC74003B930A /* SPVideoRecoderUITests.m */,
+				D8EDAB521CE5AC74003B930A /* Info.plist */,
+			);
+			path = SPVideoRecoderUITests;
+			sourceTree = "<group>";
+		};
+		D8EDAB5E1CE5AC8B003B930A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8EDAB5F1CE5ACC0003B930A /* VideoRecoderViewController.h */,
+				D8EDAB601CE5ACC0003B930A /* VideoRecoderViewController.m */,
+				D86207F91CE9E043003DB5E1 /* VideoViewController.h */,
+				D86207FA1CE9E043003DB5E1 /* VideoViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D8EDAB621CE5ACCD003B930A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				D8EDAB2B1CE5AC74003B930A /* AppDelegate.h */,
+				D8EDAB2C1CE5AC74003B930A /* AppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		D8EDAB631CE5ACDC003B930A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D8EDAB311CE5AC74003B930A /* Main.storyboard */,
+				D8EDAB371CE5AC74003B930A /* Assets.xcassets */,
+				D8EDAB391CE5AC74003B930A /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		D8EDAB641CE5AF02003B930A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D8EDAB691CE5AFE7003B930A /* play_filled.png */,
+				D8EDAB671CE5AF8B003B930A /* video_call_filled.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8EDAB241CE5AC74003B930A /* SPVideoRecoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8EDAB551CE5AC74003B930A /* Build configuration list for PBXNativeTarget "SPVideoRecoder" */;
+			buildPhases = (
+				D8EDAB211CE5AC74003B930A /* Sources */,
+				D8EDAB221CE5AC74003B930A /* Frameworks */,
+				D8EDAB231CE5AC74003B930A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPVideoRecoder;
+			productName = SPVideoRecoder;
+			productReference = D8EDAB251CE5AC74003B930A /* SPVideoRecoder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8EDAB401CE5AC74003B930A /* SPVideoRecoderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8EDAB581CE5AC74003B930A /* Build configuration list for PBXNativeTarget "SPVideoRecoderTests" */;
+			buildPhases = (
+				D8EDAB3D1CE5AC74003B930A /* Sources */,
+				D8EDAB3E1CE5AC74003B930A /* Frameworks */,
+				D8EDAB3F1CE5AC74003B930A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8EDAB431CE5AC74003B930A /* PBXTargetDependency */,
+			);
+			name = SPVideoRecoderTests;
+			productName = SPVideoRecoderTests;
+			productReference = D8EDAB411CE5AC74003B930A /* SPVideoRecoderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D8EDAB4B1CE5AC74003B930A /* SPVideoRecoderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8EDAB5B1CE5AC74003B930A /* Build configuration list for PBXNativeTarget "SPVideoRecoderUITests" */;
+			buildPhases = (
+				D8EDAB481CE5AC74003B930A /* Sources */,
+				D8EDAB491CE5AC74003B930A /* Frameworks */,
+				D8EDAB4A1CE5AC74003B930A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8EDAB4E1CE5AC74003B930A /* PBXTargetDependency */,
+			);
+			name = SPVideoRecoderUITests;
+			productName = SPVideoRecoderUITests;
+			productReference = D8EDAB4C1CE5AC74003B930A /* SPVideoRecoderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8EDAB1D1CE5AC74003B930A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Niraj Gat";
+				TargetAttributes = {
+					D8EDAB241CE5AC74003B930A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D8EDAB401CE5AC74003B930A = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D8EDAB241CE5AC74003B930A;
+					};
+					D8EDAB4B1CE5AC74003B930A = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D8EDAB241CE5AC74003B930A;
+					};
+				};
+			};
+			buildConfigurationList = D8EDAB201CE5AC74003B930A /* Build configuration list for PBXProject "SPVideoRecoder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8EDAB1C1CE5AC74003B930A;
+			productRefGroup = D8EDAB261CE5AC74003B930A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8EDAB241CE5AC74003B930A /* SPVideoRecoder */,
+				D8EDAB401CE5AC74003B930A /* SPVideoRecoderTests */,
+				D8EDAB4B1CE5AC74003B930A /* SPVideoRecoderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8EDAB231CE5AC74003B930A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EDAB3B1CE5AC74003B930A /* LaunchScreen.storyboard in Resources */,
+				D8EDAB6A1CE5AFE7003B930A /* play_filled.png in Resources */,
+				D8EDAB681CE5AF8B003B930A /* video_call_filled.png in Resources */,
+				D86208011CE9E0BD003DB5E1 /* VideosTableViewCell.xib in Resources */,
+				D8EDAB381CE5AC74003B930A /* Assets.xcassets in Resources */,
+				D8EDAB331CE5AC74003B930A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EDAB3F1CE5AC74003B930A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EDAB4A1CE5AC74003B930A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8EDAB211CE5AC74003B930A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EDAB361CE5AC74003B930A /* SPVideoRecoder.xcdatamodeld in Sources */,
+				D89399181CE9CDAE00463D67 /* VideoRecording+CoreDataProperties.m in Sources */,
+				D8EDAB611CE5ACC0003B930A /* VideoRecoderViewController.m in Sources */,
+				D89399191CE9CDAE00463D67 /* VideoRecording.m in Sources */,
+				D86207FB1CE9E043003DB5E1 /* VideoViewController.m in Sources */,
+				D86208001CE9E0BD003DB5E1 /* VideosTableViewCell.m in Sources */,
+				D8EDAB2D1CE5AC74003B930A /* AppDelegate.m in Sources */,
+				D8EDAB2A1CE5AC74003B930A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EDAB3D1CE5AC74003B930A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EDAB461CE5AC74003B930A /* SPVideoRecoderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EDAB481CE5AC74003B930A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8EDAB511CE5AC74003B930A /* SPVideoRecoderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8EDAB431CE5AC74003B930A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EDAB241CE5AC74003B930A /* SPVideoRecoder */;
+			targetProxy = D8EDAB421CE5AC74003B930A /* PBXContainerItemProxy */;
+		};
+		D8EDAB4E1CE5AC74003B930A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8EDAB241CE5AC74003B930A /* SPVideoRecoder */;
+			targetProxy = D8EDAB4D1CE5AC74003B930A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8EDAB311CE5AC74003B930A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8EDAB321CE5AC74003B930A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8EDAB391CE5AC74003B930A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8EDAB3A1CE5AC74003B930A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8EDAB531CE5AC74003B930A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8EDAB541CE5AC74003B930A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8EDAB561CE5AC74003B930A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SPVideoRecoder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silicus.SPVideoRecoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D8EDAB571CE5AC74003B930A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SPVideoRecoder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silicus.SPVideoRecoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D8EDAB591CE5AC74003B930A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SPVideoRecoderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silicus.SPVideoRecoderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPVideoRecoder.app/SPVideoRecoder";
+			};
+			name = Debug;
+		};
+		D8EDAB5A1CE5AC74003B930A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SPVideoRecoderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silicus.SPVideoRecoderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SPVideoRecoder.app/SPVideoRecoder";
+			};
+			name = Release;
+		};
+		D8EDAB5C1CE5AC74003B930A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SPVideoRecoderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silicus.SPVideoRecoderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SPVideoRecoder;
+			};
+			name = Debug;
+		};
+		D8EDAB5D1CE5AC74003B930A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SPVideoRecoderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silicus.SPVideoRecoderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SPVideoRecoder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8EDAB201CE5AC74003B930A /* Build configuration list for PBXProject "SPVideoRecoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8EDAB531CE5AC74003B930A /* Debug */,
+				D8EDAB541CE5AC74003B930A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8EDAB551CE5AC74003B930A /* Build configuration list for PBXNativeTarget "SPVideoRecoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8EDAB561CE5AC74003B930A /* Debug */,
+				D8EDAB571CE5AC74003B930A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8EDAB581CE5AC74003B930A /* Build configuration list for PBXNativeTarget "SPVideoRecoderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8EDAB591CE5AC74003B930A /* Debug */,
+				D8EDAB5A1CE5AC74003B930A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8EDAB5B1CE5AC74003B930A /* Build configuration list for PBXNativeTarget "SPVideoRecoderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8EDAB5C1CE5AC74003B930A /* Debug */,
+				D8EDAB5D1CE5AC74003B930A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D8EDAB341CE5AC74003B930A /* SPVideoRecoder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8EDAB351CE5AC74003B930A /* SPVideoRecoder.xcdatamodel */,
+			);
+			currentVersion = D8EDAB351CE5AC74003B930A /* SPVideoRecoder.xcdatamodel */;
+			path = SPVideoRecoder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D8EDAB1D1CE5AC74003B930A /* Project object */;
+}
